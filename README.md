@@ -5,6 +5,14 @@
 Nama: Fadhil Pratama  
 NPM : 4524210032
 
+- [✅] Repositori GitHub sudah dibuat
+- [✅] Melakukan minimal 3 commit
+- [✅] Menerapkan HTML Semantik (header, main, footer)
+- [✅] Formulir sudah aksesibel (label + for/id)
+- [✅] Layout Mobile-First (1 kolom)
+- [✅] Layout Desktop (2 kolom) pakai Grid/Flexbox
+- [✅] Menerapkan JavaScript Live Preview (minimal 3 input)
+
 ## 📘 Deskripsi Proyek 
 
 Proyek ini merupakan tugas UTS mata kuliah Desain Web-A, yang bertujuan untuk membuat sebuah website sederhana dengan HTML, CSS, dan JavaScript.
