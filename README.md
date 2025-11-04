@@ -1,7 +1,7 @@
 ## 🖼️ UTS Desain Web-A – Form Input dan Pratinjau Gambar
 
 
-### 👩‍💻 Pembuat
+## 👩‍💻 Pembuat
 Nama: Fadhil Pratama  
 NPM : 4524210032
 
@@ -62,7 +62,7 @@ Isi data pada form (judul, chapter, tanggal, studio, sinopsis, dan URL gambar).
 
 Gambar dan informasi yang kamu masukkan akan otomatis muncul pada bagian pratinjau di bawah form.
 
-🎨 Teknologi yang Digunakan
+## 🎨 Teknologi yang Digunakan
 
 HTML5 – untuk struktur halaman website
 
