@@ -2,7 +2,7 @@
 
 
 👩‍💻 Pembuat
-Nama: Fadhil Pratama
+Nama: Fadhil Pratama br  
 NPM : 4524210032
 
 📘 Deskripsi Proyek
