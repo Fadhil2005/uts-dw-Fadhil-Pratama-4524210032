@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>ManhwaPoster</title>
+</head>
+<body>
+  <h1 class="logo">Poster Manhwa</h1>
+  <div class="main-container">
+  <form action="submit" method="post">
+    <fieldset>
+      <legend>New Manhwa</legend>
+      <p>
+        <label for="judul">Judul manhwa</label>
+        <input type="text" name="judul" id="judul" required maxlength="80">
+      </p>
+
+      <p>
+        <label for="poster">URL poster manhwa</label>
+        <input type="text" id="poster" placeholder="Masukkan link poster (harus .jpg/.png)..." />
+      </p>
+      
+      <p>
+        <label for="chapter">Chapter terbaru</label>
+        <input type="number" name="chapter" id="chapter">
+      </p>
+
+      <p>
+        <label for="tanggal">Tanggal rilis</label>
+        <input type="date" name="tanggal" id="tanggal">
+      </p>
+
+      <p>
+        <label for="studio">Studio/Author</label>
+        <input type="text" name="studio" id="studio">
+      </p>
+
+      <p>
+        <label for="sinopsis">Sinopsis</label>
+        <textarea name="sinopsis" id="sinopsis"></textarea>
+      </p>
+    </fieldset>
+  </form>
+
+  <article>
+      <header>
+        <h1 id="preview-judul">Judul manhwa Akan Muncul di Sini</h1>
+      </header>
+        <!-- Tempat pratinjau gambar -->
+        <div id="preview-container">
+          <img id="preview-image" src="" alt="Pratinjau Gambar">
+        </div>
+
+        <h3>Chapter : <span id="preview-chapter"></span></h3>
+        <h3>Tanggal rilis : <span id="preview-tanggal"></span></h3>
+        <h3>Studio/Author : <span id="preview-studio"></span></h3>
+        <h3>Sinopsis : 
+          <br>
+          <span id="preview-sinopsis"></span></h3>
+  </article>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 <strong>ManhwaPoster</strong> | Dibuat oleh Fadhil Pratama</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
