@@ -1,0 +1,145 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+*::before, *::after{
+  box-sizing: border-box;
+}
+
+html{font-size: 100%;}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6rem;
+  background-color: #272626;
+  color: #f7f7f7;
+}
+
+/* Membuat kontainer utama untuk layout */
+.main-container {
+  max-width: 1400px;
+  margin: 0.5rem auto; /* Memberi jarak atas/bawah dan menengahkan */
+  padding: 1rem;
+}
+/* --- LAYOUT UTAMA (MOBILE FIRST) --- */
+.main-container {
+  /* ... (styling dari langkah 1) ... */
+  display: grid;
+  grid-template-columns: 1fr; /* Default: 1 kolom untuk mobile */
+  gap: clamp(1.5rem, 1vw, 1rem); /* Jarak antar form dan pratinjau */
+}
+
+/* --- MEDIA QUERIES UNTUK RESPONSIVENESS --- */
+
+/* Tampilan Desktop (lebar 992px atau lebih) */
+@media (min-width: 992px) {
+  .main-container {
+    /* Ubah layout utama menjadi 2 kolom */
+    /* Kolom pertama (form) lebarnya 1 bagian, kolom kedua (pratinjau) lebarnya 1.5 bagian */
+    grid-template-columns: 1fr 1.5fr; 
+  }
+}
+
+.logo{
+  background-color: #E43636;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+form, article {
+  background-color: #E43636;
+  margin: 3rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+fieldset {
+  border: 1px solid #F6EFD2;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+fieldset p{
+  padding: 10px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form textarea {
+  width: 95%;
+  padding: 0.75rem;
+  background-color: #F6EFD2;
+  border: 1px solid #F6EFD2;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#poster{
+  background-color: #F6EFD2;
+  color: #272626;
+}
+
+#preview-container {
+  padding: 20px 0px;
+  max-width: 100%; /* Membuat gambar */
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+#preview-image {
+  max-width: 100%; /* Membuat gambar */
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  align-items: center;
+}
+
+#preview-judul{
+  display: flex;
+  justify-content: center;
+  background-color: #E2DDB4;
+  color: #E43636;
+  padding: 30px;
+  border-radius: 5px;
+  font-weight: 800;
+}
+
+h3{
+  font-weight: 700;
+  padding: 5px;
+}
+
+h3 span{
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px 10px;
+  background-color: #111;
+  color: #eee;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border-top: 2px solid #E43636;
+}
+
